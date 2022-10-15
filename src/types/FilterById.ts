@@ -1,5 +1,6 @@
 import { Nullable } from '@jest-games-organization/backend-package-object-types';
 import { FilterByIdNested } from './FilterByIdNested';
+import { FilterByMode } from './FilterByMode';
 import { Scalars } from './Scalars';
 
 export type FilterById = {
@@ -11,7 +12,7 @@ export type FilterById = {
   in?: Nullable<Array<Nullable<Scalars['ID']>>>;
   lt?: Nullable<Scalars['ID']>;
   lte?: Nullable<Scalars['ID']>;
-  mode?: Nullable<Scalars['ID']>;
+  mode?: Nullable<FilterByMode>;
   not?: Nullable<FilterByIdNested>;
   notIn?: Nullable<Array<Nullable<Scalars['ID']>>>;
   startsWith?: Nullable<Scalars['ID']>;

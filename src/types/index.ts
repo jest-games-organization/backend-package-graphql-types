@@ -13,6 +13,7 @@ export type { FilterById } from './FilterById';
 export type { FilterByIdNested } from './FilterByIdNested';
 export type { FilterByInt } from './FilterByInt';
 export type { FilterByIntNested } from './FilterByIntNested';
+export type { FilterByMode } from './FilterByMode';
 export type { FilterByString } from './FilterByString';
 export type { FilterByStringNested } from './FilterByStringNested';
 export type { Node } from './Node';
