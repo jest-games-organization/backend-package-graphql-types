@@ -3,5 +3,4 @@ import { Scalars } from './Scalars';
 
 export type FilterByBoolean = {
   equals?: Nullable<Scalars['Boolean']>;
-  not?: Nullable<Scalars['Boolean']>;
 };
