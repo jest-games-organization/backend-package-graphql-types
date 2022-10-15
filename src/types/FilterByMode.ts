@@ -1,4 +1,4 @@
 export enum FilterByMode {
   Default = 'DEFAULT',
-  INSENSITIVE = 'INSENSITIVE',
+  Insensitive = 'INSENSITIVE',
 }
