@@ -1,6 +1,6 @@
-import { ConnectionArgs } from './ConnectionArgs';
+import { OrderBy } from './OrderBy';
 
 export type DecodedCursor<Record extends { [key: string]: unknown }> = {
   data: { [key in keyof Record]: Record[key] };
-  args: ConnectionArgs<Record>;
+  args: { orderBy: OrderBy<Record> };
 };
