@@ -1,4 +1,4 @@
 export type DecodedGlobalObjectIdentifier = {
-  data: unknown;
+  data: any;
   typename: string;
 };

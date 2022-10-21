@@ -1,4 +1,4 @@
-export type FilterBy<Record extends { [key: string]: unknown }> = {
+export type FilterBy<Record extends { [key: string]: any }> = {
   [key in keyof Record]?: any;
 } & {
   AND?: FilterBy<Record>[] | null | undefined;
