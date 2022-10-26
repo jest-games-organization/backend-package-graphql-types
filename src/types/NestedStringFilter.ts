@@ -1,13 +1,16 @@
 import { Nullable } from '@jest-games-organization/backend-package-object-types';
 import { Scalars } from './Scalars';
 
-export type FilterByDateNested = {
+export type NestedStringFilter = {
+  contains?: Nullable<Scalars['String']>;
+  endsWith?: Nullable<Scalars['String']>;
   equals?: Nullable<Scalars['String']>;
   gt?: Nullable<Scalars['String']>;
   gte?: Nullable<Scalars['String']>;
   in?: Nullable<Array<Nullable<Scalars['String']>>>;
   lt?: Nullable<Scalars['String']>;
   lte?: Nullable<Scalars['String']>;
-  not?: Nullable<FilterByDateNested>;
+  not?: Nullable<NestedStringFilter>;
   notIn?: Nullable<Array<Nullable<Scalars['String']>>>;
+  startsWith?: Nullable<Scalars['String']>;
 };

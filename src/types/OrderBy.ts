@@ -1,5 +1,5 @@
-import { OrderByDirection } from './OrderByDirection';
+import { SortOrder } from './SortOrder';
 
 export type OrderBy<Record extends { [key: string]: any }> = {
-  [key in keyof Record]?: OrderByDirection | null | undefined;
+  [key in keyof Record]?: SortOrder | null | undefined;
 };

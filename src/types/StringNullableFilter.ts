@@ -1,7 +1,9 @@
 import { Nullable } from '@jest-games-organization/backend-package-object-types';
+import { QueryMode } from './QueryMode';
+import { NestedStringNullableFilter } from './NestedStringNullableFilter';
 import { Scalars } from './Scalars';
 
-export type FilterByStringNested = {
+export type StringNullableFilter = {
   contains?: Nullable<Scalars['String']>;
   endsWith?: Nullable<Scalars['String']>;
   equals?: Nullable<Scalars['String']>;
@@ -10,7 +12,8 @@ export type FilterByStringNested = {
   in?: Nullable<Array<Nullable<Scalars['String']>>>;
   lt?: Nullable<Scalars['String']>;
   lte?: Nullable<Scalars['String']>;
-  not?: Nullable<FilterByStringNested>;
+  mode?: Nullable<QueryMode>;
+  not?: Nullable<NestedStringNullableFilter>;
   notIn?: Nullable<Array<Nullable<Scalars['String']>>>;
   startsWith?: Nullable<Scalars['String']>;
 };
