@@ -23,7 +23,6 @@ export type { NestedIntFilter } from './NestedIntFilter';
 export type { NestedIntNullableFilter } from './NestedIntNullableFilter';
 export type { NestedStringFilter } from './NestedStringFilter';
 export type { NestedStringNullableFilter } from './NestedStringNullableFilter';
-export type { Node } from './Node';
 export type { OrderBy } from './OrderBy';
 export type { PageInfo } from './PageInfo';
 export { QueryMode } from './QueryMode';

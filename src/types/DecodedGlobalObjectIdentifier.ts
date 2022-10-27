@@ -1,4 +1,6 @@
+import { DataObject } from '@jest-games-organization/backend-package-object-types';
+
 export type DecodedGlobalObjectIdentifier = {
-  data: any;
+  data: DataObject;
   typename: string;
 };

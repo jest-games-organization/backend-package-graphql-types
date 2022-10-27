@@ -1,4 +1,6 @@
-export type WhereInput<Record extends { [key: string]: any }> = {
+import { DataObject } from '@jest-games-organization/backend-package-object-types';
+
+export type WhereInput<Record extends DataObject> = {
   [key in keyof Record]?: any;
 } & {
   AND?: WhereInput<Record>[] | null | undefined;
